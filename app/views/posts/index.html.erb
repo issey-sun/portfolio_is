@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Resume - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Portofolio</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Home</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Works</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">SNS</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Portofolio
+                    </h1></br>
+                    <h3><div class="index-font"><i class="fas fa-flag-checkered"></i> index</div></h3></br>
+                    <div class="social-icons">
+                        <a class="index" href="#experience"><i class="far fa-user-circle"></i> Profile</a>
+                        <a class="index" href="#education"><i class="fab fa-waze"></i> Works</a>    
+                        <a class="index" href="#skills"><i class="fab fa-twitter"></i> SNS</a>
+                        </div>
+                     </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5"><i class="far fa-user-circle"></i> Profile</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                           <h3>Self‐introduction</h3>
+                            <p>初めまして、エンジニアを目指しております丸目 一成（マルメ イッセイ）と申します。</p>
+                            <p>職歴としては同社で、技術開発→人事→総務という経歴です。</p></br>
+
+                            <h3>Occation</h3>
+                            <p>エンジニアを目指そうと思ったきっかけは仕事の最大効率化を考えるときにありました。</p>
+                            <p>いつも行き着く先はプログラミングによる自動化で、その中で調べるテクノロジーの世界は</p>
+                            <p>魅力的なものでした。自分がプログラミングを駆使したエンジニアになりたいと思いました。</p>
+                            <br><br><h4><%= link_to "next => Work", "#education", class: "nexts" %></h4>
+                        </div>
+                         <%= image_tag 'issey.jpg', class:'image_tags' %> 
+                    </div>
+                </div>
+            </section>
+            
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5"><i class="fab fa-waze"></i> Work</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <p>褒め方を軸にマネジメントが勉強できるアプリを開発しております。</p>
+                            <p>Gitおよびwebは以下画像をクリックすることで、ご覧いただけます。</p>
+                            <a class="links" href="https://github.com/issey-sun/praise.git"><i class="fab fa-github"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;　
+                            <a class="links2" href="https://praise-homekata.herokuapp.com/"><%= image_tag 'praise.png', class:'image_tags2' %></a>
+                            <h4><%= link_to "next => SNS", "#skills", class: "nexts" %></h4>
+                        </div>
+                         <%= image_tag 'sea.jpg', class:'image_tags3' %>
+                    </div>
+                </div> 
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5"><i class="fab fa-twitter"></i> SNS</h2>
+                    お問い合わせはTwitterのDMでご連絡くださいませ。 </br></br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;↓</br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;<a class="links2" href="https://twitter.com/NarimiyaIssa"><%= image_tag 'twitter.png', class:'image_tags5' %></a>
+                </div>
+            <%= image_tag 'network.jpg', class:'image_tags6' %> 
+            </section>
+            <hr class="m-0" />
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
